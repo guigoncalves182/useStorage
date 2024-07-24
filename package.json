@@ -1,6 +1,6 @@
 {
   "name": "@guigoncalves182/usestorage",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "useStorage",
   "main": "src/useStorage.tsx",
   "repository": {
@@ -28,6 +28,7 @@
     "@types/jest": "^29.5.12",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
@@ -35,8 +36,5 @@
   "bugs": {
     "url": "https://github.com/guigoncalves182/useStorage/issues"
   },
-  "homepage": "https://github.com/guigoncalves182/useStorage#readme",
-  "dependencies": {
-    "jest-environment-jsdom": "^29.7.0"
-  }
+  "homepage": "https://github.com/guigoncalves182/useStorage#readme"
 }
