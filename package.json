@@ -1,6 +1,6 @@
 {
   "name": "@guigoncalves182/usestorage",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "useStorage",
   "main": "src/useStorage.tsx",
   "repository": {
