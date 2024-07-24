@@ -1,0 +1,27 @@
+{
+  "name": "@guigoncalves182/usestorage",
+  "version": "1.0.6",
+  "description": "useStorage",
+  "main": "src/useStorage.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guigoncalves182/useStorage.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "localStorage",
+    "sessionStorage",
+    "storage",
+    "typescript"
+  ],
+  "author": "Guilherme Gonçalves <guigoncalves@msn.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "bugs": {
+    "url": "https://github.com/guigoncalves182/useStorage/issues"
+  },
+  "homepage": "https://github.com/guigoncalves182/useStorage#readme"
+}
