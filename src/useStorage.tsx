@@ -48,11 +48,11 @@ export const useStorage = <T,>({
   const removeItem = (): void => {
     switch (storage) {
       case "sessionStorage":
-        if (key) sessionStorage.removeItem(key);
+        sessionStorage.removeItem(key);
         break;
 
       default:
-        if (key) localStorage.removeItem(key);
+        localStorage.removeItem(key);
         break;
     }
   };
