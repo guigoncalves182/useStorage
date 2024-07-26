@@ -5,11 +5,16 @@ interface IUseStorage {
   storage?: TStorage;
 }
 
+const isWindowDefined = (): boolean => typeof window !== 'undefined';
+
+
 export const useStorage = <T,>({
   key,
   storage = "localStorage",
 }: IUseStorage) => {
   const setItem = (value: T): void => {
+    if (!isWindowDefined) return;
+
     const stringValue = JSON.stringify(value);
 
     switch (storage) {
@@ -24,6 +29,8 @@ export const useStorage = <T,>({
   };
 
   const getItem = (): T | null => {
+    if (!isWindowDefined) return;
+
     let stringValue: string | null;
 
     switch (storage) {
@@ -46,6 +53,8 @@ export const useStorage = <T,>({
   };
 
   const removeItem = (): void => {
+    if (!isWindowDefined) return;
+
     switch (storage) {
       case "sessionStorage":
         sessionStorage.removeItem(key);
